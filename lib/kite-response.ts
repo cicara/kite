@@ -16,7 +16,10 @@ export class KiteResponse<T = any> extends Response {
         break;
       }
       case "application/json": {
-        kr.data = await response.clone().json();
+        const text = await response.clone().text();
+        if (text) {
+          kr.data = JSON.parse(text);
+        }
         break;
       }
     }

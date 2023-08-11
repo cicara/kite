@@ -2,8 +2,8 @@
 
 kite is tiny fetch wrapper.
 
-- kite.js `3.48 kB`, gzip `1.25 kB`
-- kite.umd.cjs `2.80 kB`, gzip `1.19 kB`
+- kite.js `3.57 kB`, gzip `1.29 kB`
+- kite.umd.cjs `2.86 kB`, gzip `1.21 kB`
 
 ## Installation
 

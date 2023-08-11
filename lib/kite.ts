@@ -178,7 +178,12 @@ export class Kite {
       }
       case "json":
       default: {
-        return await response.json();
+        const text = await response.text();
+        if (text) {
+          return JSON.parse(text);
+        } else {
+          return null;
+        }
       }
     }
   }
