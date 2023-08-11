@@ -7,7 +7,7 @@
     "dist"
   ],
   "module": "./dist/kite.js",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
