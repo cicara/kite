@@ -6,7 +6,7 @@ export class KiteResponse<T = any> extends Response {
   }
 
   public static async fromResponse<T = any>(response: Response): Promise<KiteResponse<T>> {
-    const kr = new KiteResponse(response.body, response);
+    const kr = new KiteResponse(response.clone().body, response);
 
     switch (kr.getContentType()) {
       case "text/plain":
